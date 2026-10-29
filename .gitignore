@@ -1,0 +1,13 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.tgz
+.DS_Store
+
+.env
+.env.*
+!.env.example
+release-assets/
+release-notes.md
+*.log

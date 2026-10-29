@@ -1,0 +1,88 @@
+.pr-description {
+  font-size: 14px;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+.pr-description :where(h1, h2, h3, h4) {
+  margin-top: 1.8em;
+  margin-bottom: 0.7em;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+.pr-description :where(h1, h2) {
+  font-size: 1.35em;
+}
+.pr-description > :first-child {
+  margin-top: 0;
+}
+.pr-description :where(p, ul, ol, blockquote) {
+  margin-block: 0.85em;
+}
+.pr-description :where(li) {
+  padding-left: 0.15em;
+  margin-block: 0.45em;
+}
+.pr-description :where(li)::marker {
+  color: color-mix(in srgb, currentColor 55%, transparent);
+}
+.pr-description :not(pre) > code {
+  border-radius: 6px;
+  padding: 0.18em 0.4em;
+  background: color-mix(in srgb, currentColor 7%, transparent);
+  font-size: 0.9em;
+}
+.pr-description :where(pre) {
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 10px;
+}
+.pr-description :where(table) {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.pr-description :where(blockquote) {
+  border-left: 3px solid color-mix(in srgb, currentColor 25%, transparent);
+  padding-left: 1em;
+  color: color-mix(in srgb, currentColor 75%, transparent);
+}
+.pr-description code[data-pr-chip] {
+  padding: 0.22em 0.45em;
+  border-radius: 7px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.pr-description code[data-pr-file] {
+  cursor: pointer;
+}
+.pr-description code[data-pr-file]:hover {
+  background: color-mix(in srgb, currentColor 13%, transparent);
+}
+.pr-description code[data-pr-file]:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+.pr-description code[data-pr-file-kind]::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -0.12em;
+  width: 0.85em;
+  height: 1em;
+  margin-right: 0.4em;
+  background: #38bdf8;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 20'%3E%3Cpath d='M2 0h8l6 6v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2Zm7 2v5h5L9 2ZM3 11v2h10v-2H3Zm0 4v2h8v-2H3Z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+.pr-description code[data-pr-file-kind="yml"]::before,
+.pr-description code[data-pr-file-kind="yaml"]::before {
+  background: #f87171;
+}
+.pr-description code[data-pr-file-kind="cs"]::before,
+.pr-description code[data-pr-file-kind="rs"]::before {
+  background: #c084fc;
+}
+.pr-description code[data-pr-file-kind="json"]::before,
+.pr-description code[data-pr-file-kind="sql"]::before {
+  background: #fbbf24;
+}

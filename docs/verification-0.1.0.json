@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "bbVersion": "0.48.0",
+  "sdkVersion": "0.6.94",
+  "e2e": {
+    "passed": 25,
+    "failed": 0,
+    "flaky": 0,
+    "liveGitHubWrites": false,
+    "agentCreation": false
+  },
+  "screenshots": [
+    {
+      "file": "docs/screenshots/overview.png",
+      "width": 2560,
+      "height": 2604,
+      "bytes": 257315
+    },
+    {
+      "file": "docs/screenshots/checks.png",
+      "width": 2560,
+      "height": 2604,
+      "bytes": 226110
+    },
+    {
+      "file": "docs/screenshots/code.png",
+      "width": 2560,
+      "height": 2604,
+      "bytes": 329813
+    },
+    {
+      "file": "docs/screenshots/chat.png",
+      "width": 2560,
+      "height": 2604,
+      "bytes": 164595
+    }
+  ],
+  "runtimeVulnerabilities": 0
+}
